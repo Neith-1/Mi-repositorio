@@ -35,7 +35,7 @@ header ul {
   align-items: center;
 }
 nav a {
-  color: #07575B;
+  color: #07575b;
   text-decoration: none;
   font-weight: bold;
 }
@@ -72,7 +72,7 @@ nav a {
   color: #66a5ad;
   margin: 80px 10px;
 }
-.imagenes p{
+.imagenes p {
   text-align: justify;
   text-decoration: solid;
   text-align: center;
@@ -96,22 +96,22 @@ nav a {
 .terceraimagen {
   height: 300px;
 }
-.mision h2{
+.mision h2 {
   text-align: justify;
   text-decoration: solid;
   color: #66a5ad;
   margin: 100px 10px;
 }
-.imagenexpresion{
+.imagenexpresion {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.imagenmision{
+.imagenmision {
   height: 300px;
   margin: 30px 150px;
 }
-.imagenmisiondos{
+.imagenmisiondos {
   height: 300px;
   margin: 30px 150px;
 }
@@ -180,11 +180,11 @@ footer img {
   color: #66a5ad;
   margin: 20px 0px;
 }
-.areasdeatencion p{
+.areasdeatencion p {
   text-align: justify;
   text-decoration: solid;
   margin: 60px 40px;
-} 
+}
 .imagenesatencion {
   display: flex;
   flex-direction: row;
@@ -208,44 +208,44 @@ footer img {
 }
 
 /*areas de trabajo----------------------------------------------------------------------------------------------*/
-.areasdetrabajo h1{
+.areasdetrabajo h1 {
   text-align: center;
   text-decoration: solid;
   font-weight: bold;
   color: #66a5ad;
   margin: 20px 0px;
 }
-.areasdetrabajo h2{
+.areasdetrabajo h2 {
   text-align: justify;
   text-decoration: solid;
   margin: 60px 20px;
-  }
-.areasdetrabajo p{
-text-align: justify;
-text-decoration: solid;
-margin: 60px 40px;
+}
+.areasdetrabajo p {
+  text-align: justify;
+  text-decoration: solid;
+  margin: 60px 40px;
 }
 
 /*contacto------------------------------------------------------------------------------------------------------ */
-.contactanos h1{
+.contactanos h1 {
   text-align: center;
   text-decoration: solid;
   font-weight: bold;
   color: #66a5ad;
   margin: 20px 0px;
 }
-.contactanos h2{
+.contactanos h2 {
   text-decoration: solid;
   text-align: center;
   margin: 20px 0px;
 }
-.formulario{
+.formulario {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 10px;
 }
-.map{
+.map {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -254,34 +254,34 @@ margin: 60px 40px;
 
 /* mobile ---------------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 500px) {
-  header{
+  header {
     flex-direction: column;
   }
-  nav{
+  nav {
     width: 100%;
   }
-  header ul{
+  header ul {
     margin-left: 8px;
     font-size: small;
   }
-  .logo{
+  .logo {
     height: 100px;
     width: 100px;
   }
-  .banner{
+  .banner {
     text-shadow: none;
     height: 200px;
     width: 480px;
     padding: 100px;
   }
-  .titulobanner{
+  .titulobanner {
     font-size: 2rem;
     margin-bottom: 60%;
   }
-  .textobanner{
+  .textobanner {
     display: none;
   }
-  .imagenes{
+  .imagenes {
     flex-direction: column;
     justify-content: center;
     margin: 50px 10px;
@@ -298,16 +298,16 @@ margin: 60px 40px;
     height: 200px;
     margin: 20px 60px;
   }
-  .imagenexpresion{
+  .imagenexpresion {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .imagenmision{
+  .imagenmision {
     height: 200px;
-    margin: 20px 60px;;
+    margin: 20px 60px;
   }
-  .imagenmisiondos{
+  .imagenmisiondos {
     height: 200px;
     margin: 20px 60px;
   }
@@ -320,7 +320,7 @@ margin: 60px 40px;
   .quienessomos h1 {
     font-size: large;
   }
-  .quienessomos h2{
+  .quienessomos h2 {
     font-size: large;
   }
   .imagenprofesionales {
@@ -339,17 +339,17 @@ margin: 60px 40px;
     font-weight: bold;
     margin: 0px 0px;
   }
-  .imagenesatencion p{
+  .imagenesatencion p {
     text-align: center;
     margin: 0px 0px;
-  } 
+  }
   .imagenesatencion {
     flex-direction: column;
     margin: 0px 0px;
   }
   .imageninfanto {
     height: 180px;
-    margin: 20px 60px;  
+    margin: 20px 60px;
   }
   .imagenadultos {
     height: 180px;
@@ -359,7 +359,7 @@ margin: 60px 40px;
     flex-direction: column;
     justify-content: center;
   }
-  .imagenesatenciondos p{
+  .imagenesatenciondos p {
     text-align: center;
     margin: 0px 0px;
   }
@@ -367,13 +367,13 @@ margin: 60px 40px;
     height: 180px;
     margin: 20px 60px;
   }
-  .areasdetrabajo h1{
+  .areasdetrabajo h1 {
     font-size: large;
   }
-  .contactanos h1{
+  .contactanos h1 {
     font-size: large;
   }
-  .formulario{
+  .formulario {
     flex-direction: column;
     justify-content: center;
   }
@@ -381,13 +381,13 @@ margin: 60px 40px;
 
 /* tablet ------------------------------------------------------------------------------------------------------*/
 @media only screen and (min-width: 481px) and (max-width: 978px) {
-  header{
+  header {
     flex-direction: column;
   }
-  nav{
+  nav {
     width: 100%;
   }
-  h2{
+  h2 {
     font-size: large;
   }
 }
