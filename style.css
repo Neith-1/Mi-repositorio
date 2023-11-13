@@ -1,0 +1,393 @@
+/* Color: #66A5AD, #C4DFE6, #07575B */
+
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;1,9..40,400&family=Mulish&display=swap");
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header------------------------------------------------------------------------------------------------------- */
+
+header {
+  background-color: #c4dfe6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+nav {
+  width: 50%;
+}
+header ul {
+  list-style-type: none;
+  margin-right: 10px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  color: #07575B;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo {
+  height: 150px;
+  width: 150px;
+}
+
+/*index--------------------------------------------------------------------------------------------------------- */
+
+.banner {
+  text-align: center;
+  background-image: url(./imagenes/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-shadow: 1px 1px 25px rgb(0, 0, 0);
+  color: whitesmoke;
+  padding: 180px;
+}
+
+.titulobanner {
+  font-size: 5rem;
+}
+
+.textobanner {
+  font-size: 3rem;
+}
+
+.presentacion h2 {
+  text-align: justify;
+  text-decoration: solid;
+  color: #66a5ad;
+  margin: 80px 10px;
+}
+.imagenes p{
+  text-align: justify;
+  text-decoration: solid;
+  text-align: center;
+  margin: 25px 10px;
+}
+
+.imagenes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 80px 0px;
+}
+.primeraimagen {
+  height: 300px;
+}
+
+.segundaimagen {
+  height: 300px;
+}
+
+.terceraimagen {
+  height: 300px;
+}
+.mision h2{
+  text-align: justify;
+  text-decoration: solid;
+  color: #66a5ad;
+  margin: 100px 10px;
+}
+.imagenexpresion{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.imagenmision{
+  height: 300px;
+  margin: 30px 150px;
+}
+.imagenmisiondos{
+  height: 300px;
+  margin: 30px 150px;
+}
+
+/* Footer------------------------------------------------------------------------------------------------------*/
+footer {
+  background-color: #c4dfe6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+footer img {
+  width: 50px;
+}
+
+/*quienes somos-------------------------------------------------------------------------------------------------*/
+.quienessomos h1 {
+  text-align: center;
+  text-decoration: solid;
+  font-weight: bold;
+  color: #66a5ad;
+  margin: 20px 0px;
+}
+.quienessomos p {
+  text-align: justify;
+  text-decoration: solid;
+  margin: 50px 30px;
+}
+.quienessomos h2 {
+  text-align: center;
+  text-decoration: solid;
+  font-weight: bold;
+  color: #66a5ad;
+}
+.imagenprofesionales {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 50px 30px;
+}
+.profesionalesdos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 50px 30px;
+}
+.terapeuta1 {
+  height: 300px;
+}
+.terapeuta2 {
+  height: 300px;
+}
+.terapeuta3 {
+  height: 300px;
+}
+.terapeuta4 {
+  height: 300px;
+}
+
+/*atención-----------------------------------------------------------------------------------------------------*/
+.areasdeatencion h1 {
+  text-align: center;
+  text-decoration: solid;
+  font-weight: bold;
+  color: #66a5ad;
+  margin: 20px 0px;
+}
+.areasdeatencion p{
+  text-align: justify;
+  text-decoration: solid;
+  margin: 60px 40px;
+} 
+.imagenesatencion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+.imageninfanto {
+  height: 300px;
+}
+.imagenadultos {
+  height: 300px;
+}
+.imagenesatenciondos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.imagenfamilias {
+  height: 300px;
+}
+
+/*areas de trabajo----------------------------------------------------------------------------------------------*/
+.areasdetrabajo h1{
+  text-align: center;
+  text-decoration: solid;
+  font-weight: bold;
+  color: #66a5ad;
+  margin: 20px 0px;
+}
+.areasdetrabajo h2{
+  text-align: justify;
+  text-decoration: solid;
+  margin: 60px 20px;
+  }
+.areasdetrabajo p{
+text-align: justify;
+text-decoration: solid;
+margin: 60px 40px;
+}
+
+/*contacto------------------------------------------------------------------------------------------------------ */
+.contactanos h1{
+  text-align: center;
+  text-decoration: solid;
+  font-weight: bold;
+  color: #66a5ad;
+  margin: 20px 0px;
+}
+.contactanos h2{
+  text-decoration: solid;
+  text-align: center;
+  margin: 20px 0px;
+}
+.formulario{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.map{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* mobile ---------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 500px) {
+  header{
+    flex-direction: column;
+  }
+  nav{
+    width: 100%;
+  }
+  header ul{
+    margin-left: 8px;
+    font-size: small;
+  }
+  .logo{
+    height: 100px;
+    width: 100px;
+  }
+  .banner{
+    text-shadow: none;
+    height: 200px;
+    width: 480px;
+    padding: 100px;
+  }
+  .titulobanner{
+    font-size: 2rem;
+    margin-bottom: 60%;
+  }
+  .textobanner{
+    display: none;
+  }
+  .imagenes{
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 10px;
+  }
+  .primeraimagen {
+    height: 200px;
+    margin: 20px 60px;
+  }
+  .segundaimagen {
+    height: 200px;
+    margin: 20px 60px;
+  }
+  .terceraimagen {
+    height: 200px;
+    margin: 20px 60px;
+  }
+  .imagenexpresion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .imagenmision{
+    height: 200px;
+    margin: 20px 60px;;
+  }
+  .imagenmisiondos{
+    height: 200px;
+    margin: 20px 60px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer img {
+    width: 30px;
+  }
+  .quienessomos h1 {
+    font-size: large;
+  }
+  .quienessomos h2{
+    font-size: large;
+  }
+  .imagenprofesionales {
+    flex-direction: column;
+  }
+  .profesionalesdos {
+    flex-direction: column;
+  }
+  .areasdeatencion h1 {
+    font-size: large;
+  }
+  .areasdeatencion h3 {
+    font-size: medium;
+    text-align: center;
+    text-decoration: solid;
+    font-weight: bold;
+    margin: 0px 0px;
+  }
+  .imagenesatencion p{
+    text-align: center;
+    margin: 0px 0px;
+  } 
+  .imagenesatencion {
+    flex-direction: column;
+    margin: 0px 0px;
+  }
+  .imageninfanto {
+    height: 180px;
+    margin: 20px 60px;  
+  }
+  .imagenadultos {
+    height: 180px;
+    margin: 20px 60px;
+  }
+  .imagenesatenciondos {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .imagenesatenciondos p{
+    text-align: center;
+    margin: 0px 0px;
+  }
+  .imagenfamilias {
+    height: 180px;
+    margin: 20px 60px;
+  }
+  .areasdetrabajo h1{
+    font-size: large;
+  }
+  .contactanos h1{
+    font-size: large;
+  }
+  .formulario{
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* tablet ------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 481px) and (max-width: 978px) {
+  header{
+    flex-direction: column;
+  }
+  nav{
+    width: 100%;
+  }
+  h2{
+    font-size: large;
+  }
+}
