@@ -50,6 +50,8 @@ nav a {
 .banner {
   text-align: center;
   background-image: url(../imagenes/banner.jpg);
+  max-width: 100%;
+  height: auto;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -58,7 +60,7 @@ nav a {
   padding: 180px;
 }
 
-.titulobanner {
+.animate__animated animate__backInDown{
   font-size: 5rem;
 }
 
@@ -70,37 +72,17 @@ nav a {
   text-align: justify;
   text-decoration: solid;
   color: #66a5ad;
-  margin: 80px 10px;
+  margin: 5%;
 }
-.imagenes p {
-  text-align: justify;
-  text-decoration: solid;
-  text-align: center;
-  margin: 25px 10px;
-}
-
-.imagenes {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 80px 0px;
-}
-.primeraimagen {
-  height: 300px;
-}
-
-.segundaimagen {
-  height: 300px;
-}
-
-.terceraimagen {
-  height: 300px;
+.card-img-top{
+  max-height: 60%;
+  width: auto;
 }
 .mision h2 {
   text-align: justify;
   text-decoration: solid;
   color: #66a5ad;
-  margin: 100px 10px;
+  margin: 5%;
 }
 .imagenexpresion {
   display: flex;
@@ -108,11 +90,13 @@ nav a {
   justify-content: space-around;
 }
 .imagenmision {
-  height: 300px;
+  max-width: 60%;
+  height: auto;
   margin: 30px 150px;
 }
 .imagenmisiondos {
-  height: 300px;
+  max-width: 60%;
+  height: auto;
   margin: 30px 150px;
 }
 
