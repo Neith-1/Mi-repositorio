@@ -324,9 +324,6 @@ footer .contacto img {
 
 /*mobile*/
 @media only screen and (max-width: 500px) {
-  header {
-    flex-direction: column;
-  }
   header .logo {
     height: 100px;
     width: 100px;
@@ -335,6 +332,7 @@ footer .contacto img {
     width: 100%;
   }
   header nav ul {
+    flex-direction: column;
     margin-left: 8px;
     font-size: 0.9em;
   }
