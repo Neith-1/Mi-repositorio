@@ -1,52 +1,105 @@
+@charset "UTF-8";
 /* Color: #66A5AD, #C4DFE6, #07575B */
-
 /* Font */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;1,9..40,400&family=Mulish&display=swap");
-body {
-  font-family: "Mulish", sans-serif;
-}
-
+/*Variables*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-/* Header------------------------------------------------------------------------------------------------------- */
+html {
+  font-family: "Mulish", sans-serif;
+  font-size: 62, 5%;
+  overflow-x: hidden;
+}
 
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+/*Header*/
 header {
-  background-color: #c4dfe6;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
+  background: rgb(196, 223, 230);
+  background: linear-gradient(96deg, rgb(196, 223, 230) 0%, rgb(196, 223, 230) 72%, rgb(102, 165, 173) 100%);
   position: sticky;
   top: 0px;
 }
-nav {
+header .logo {
+  height: 150px;
+  width: 150px;
+}
+header nav {
   width: 50%;
 }
-header ul {
+header nav ul {
   list-style-type: none;
   margin-right: 10px;
   height: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-nav a {
+header nav ul li a {
   color: #07575b;
   text-decoration: none;
   font-weight: bold;
 }
 
-.logo {
-  height: 150px;
-  width: 150px;
+/*Footer*/
+footer {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: rgb(196, 223, 230);
+  background: linear-gradient(96deg, rgb(196, 223, 230) 0%, rgb(196, 223, 230) 72%, rgb(102, 165, 173) 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+footer p {
+  color: #07575b;
+  font-weight: bold;
+}
+footer .redessociales {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .redessociales img {
+  width: 40px;
+}
+footer .redessociales .logoinstagram {
+  padding-top: 50%;
+}
+footer .redessociales .logoyoutube {
+  padding-top: 50%;
+}
+footer .contacto img {
+  width: 25px;
 }
 
-/*index--------------------------------------------------------------------------------------------------------- */
-
+/*Main index*/
 .banner {
   text-align: center;
   background-image: url(../imagenes/banner.jpg);
@@ -60,59 +113,74 @@ nav a {
   padding: 180px;
 }
 
-.animate__animated animate__backInDown{
-  font-size: 5rem;
-}
-
-.textobanner {
-  font-size: 3rem;
-}
-
 .presentacion h2 {
   text-align: justify;
   text-decoration: solid;
   color: #66a5ad;
   margin: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
-.card-img-top{
-  max-height: 60%;
-  width: auto;
+
+.servicios {
+  background-color: #C4DFE6;
+}
+.servicios .row row-cols-1 row-cols-md-3 g-4 {
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+.servicios .card-img-top {
+  height: 300px;
+}
+.servicios .card-title {
+  color: #07575B;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+}
+.servicios .card-text {
+  color: #66a5ad;
+  font-family: "Mulish", sans-serif;
+}
+
+.mision {
+  padding-bottom: 5%;
 }
 .mision h2 {
   text-align: justify;
   text-decoration: solid;
   color: #66a5ad;
   margin: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
-.imagenexpresion {
+.mision .imagenexpresion {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+  height: 100%;
 }
-.imagenmision {
+.mision .imagenmision {
   max-width: 60%;
   height: auto;
-  margin: 30px 150px;
+  margin: 30px 90px;
+  transition: 2s;
 }
-.imagenmisiondos {
+.mision .imagenmision:hover {
+  transform: scale(1.05, 1.05);
+}
+.mision .imagenmisiondos {
   max-width: 60%;
   height: auto;
-  margin: 30px 150px;
+  margin: 30px 90px;
+  transition: 2s;
+}
+.mision .imagenmisiondos:hover {
+  transform: scale(1.05, 1.05);
 }
 
-/* Footer------------------------------------------------------------------------------------------------------*/
-footer {
-  background-color: #c4dfe6;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-footer img {
-  width: 50px;
-}
-
-/*quienes somos-------------------------------------------------------------------------------------------------*/
+/*quienes somos*/
 .quienessomos h1 {
   text-align: center;
   text-decoration: solid;
@@ -120,43 +188,45 @@ footer img {
   color: #66a5ad;
   margin: 20px 0px;
 }
-.quienessomos p {
-  text-align: justify;
-  text-decoration: solid;
-  margin: 50px 30px;
-}
 .quienessomos h2 {
   text-align: center;
   text-decoration: solid;
   font-weight: bold;
   color: #66a5ad;
 }
-.imagenprofesionales {
+.quienessomos p {
+  text-align: justify;
+  text-decoration: solid;
+  margin: 50px 30px;
+}
+.quienessomos .imagenprofesionales {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   margin: 50px 30px;
 }
-.profesionalesdos {
+.quienessomos .imagenprofesionales .terapeuta1 {
+  height: 300px;
+}
+.quienessomos .imagenprofesionales .terapeuta2 {
+  height: 300px;
+}
+.quienessomos .profesionalesdos {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
   margin: 50px 30px;
 }
-.terapeuta1 {
+.quienessomos .profesionalesdos .terapeuta3 {
   height: 300px;
 }
-.terapeuta2 {
-  height: 300px;
-}
-.terapeuta3 {
-  height: 300px;
-}
-.terapeuta4 {
+.quienessomos .profesionalesdos .terapeuta4 {
   height: 300px;
 }
 
-/*atención-----------------------------------------------------------------------------------------------------*/
+/*atención*/
 .areasdeatencion h1 {
   text-align: center;
   text-decoration: solid;
@@ -169,29 +239,43 @@ footer img {
   text-decoration: solid;
   margin: 60px 40px;
 }
-.imagenesatencion {
+.areasdeatencion .imagenesatencion {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
   margin-bottom: 10px;
 }
-.imageninfanto {
+.areasdeatencion .imagenesatencion .imageninfanto {
   height: 300px;
+  transition: 2s;
 }
-.imagenadultos {
+.areasdeatencion .imagenesatencion .imageninfanto:hover {
+  transform: scale(1.05, 1.05);
+}
+.areasdeatencion .imagenesatencion .imagenadultos {
   height: 300px;
+  transition: 2s;
 }
-.imagenesatenciondos {
+.areasdeatencion .imagenesatencion .imagenadultos:hover {
+  transform: scale(1.05, 1.05);
+}
+.areasdeatencion .imagenesatenciondos {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   margin-bottom: 10px;
 }
-.imagenfamilias {
+.areasdeatencion .imagenesatenciondos .imagenfamilias {
   height: 300px;
+  transition: 2s;
+}
+.areasdeatencion .imagenesatenciondos .imagenfamilias:hover {
+  transform: scale(1.05, 1.05);
 }
 
-/*areas de trabajo----------------------------------------------------------------------------------------------*/
+/*areas de trabajo*/
 .areasdetrabajo h1 {
   text-align: center;
   text-decoration: solid;
@@ -210,7 +294,7 @@ footer img {
   margin: 60px 40px;
 }
 
-/*contacto------------------------------------------------------------------------------------------------------ */
+/*contacto*/
 .contactanos h1 {
   text-align: center;
   text-decoration: solid;
@@ -223,34 +307,36 @@ footer img {
   text-align: center;
   margin: 20px 0px;
 }
-.formulario {
+.contactanos section .formulario {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   margin-bottom: 10px;
 }
-.map {
+.contactanos .map {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   margin-bottom: 10px;
 }
 
-/* mobile ---------------------------------------------------------------------------------------------------------*/
+/*mobile*/
 @media only screen and (max-width: 500px) {
   header {
     flex-direction: column;
   }
-  nav {
-    width: 100%;
-  }
-  header ul {
-    margin-left: 8px;
-    font-size: small;
-  }
-  .logo {
+  header .logo {
     height: 100px;
     width: 100px;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav ul {
+    margin-left: 8px;
+    font-size: 0.9em;
   }
   .banner {
     text-shadow: none;
@@ -258,40 +344,30 @@ footer img {
     width: 480px;
     padding: 100px;
   }
-  .titulobanner {
+  .banner h1 {
     font-size: 2rem;
     margin-bottom: 60%;
   }
-  .textobanner {
+  .banner h2 {
     display: none;
   }
-  .imagenes {
-    flex-direction: column;
-    justify-content: center;
-    margin: 50px 10px;
+  .presentacion h2 {
+    font-size: 1.5rem;
   }
-  .primeraimagen {
-    height: 200px;
-    margin: 20px 60px;
+  .mision h2 {
+    font-size: 1.5rem;
   }
-  .segundaimagen {
-    height: 200px;
-    margin: 20px 60px;
-  }
-  .terceraimagen {
-    height: 200px;
-    margin: 20px 60px;
-  }
-  .imagenexpresion {
+  .mision .imagenexpresion {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
-  .imagenmision {
+  .mision .imagenmision {
     height: 200px;
     margin: 20px 60px;
   }
-  .imagenmisiondos {
+  .mision .imagenmisiondos {
     height: 200px;
     margin: 20px 60px;
   }
@@ -307,71 +383,79 @@ footer img {
   .quienessomos h2 {
     font-size: large;
   }
-  .imagenprofesionales {
+  .quienessomos .imagenprofesionales {
     flex-direction: column;
   }
-  .profesionalesdos {
+  .quienessomos .profesionalesdos {
     flex-direction: column;
   }
   .areasdeatencion h1 {
     font-size: large;
   }
-  .areasdeatencion h3 {
+  .areasdeatencion h2 {
     font-size: medium;
     text-align: center;
     text-decoration: solid;
     font-weight: bold;
     margin: 0px 0px;
   }
-  .imagenesatencion p {
+  .areasdeatencion p {
     text-align: center;
     margin: 0px 0px;
   }
-  .imagenesatencion {
+  .areasdeatencion .imagenesatencion {
     flex-direction: column;
     margin: 0px 0px;
   }
-  .imageninfanto {
+  .areasdeatencion .imagenesatencion .imageninfanto {
     height: 180px;
     margin: 20px 60px;
   }
-  .imagenadultos {
+  .areasdeatencion .imagenesatencion .imagenadultos {
     height: 180px;
     margin: 20px 60px;
   }
-  .imagenesatenciondos {
+  .areasdeatencion .imagenesatenciondos {
     flex-direction: column;
     justify-content: center;
   }
-  .imagenesatenciondos p {
+  .areasdeatencion .imagenesatenciondos p {
     text-align: center;
     margin: 0px 0px;
   }
-  .imagenfamilias {
+  .areasdeatencion .imagenesatenciondos .imagenfamilias {
     height: 180px;
     margin: 20px 60px;
   }
   .areasdetrabajo h1 {
     font-size: large;
   }
+  .areasdetrabajo h2 {
+    font-size: large;
+  }
   .contactanos h1 {
     font-size: large;
   }
-  .formulario {
+  .contactanos h2 {
+    font-size: large;
+  }
+  .contactanos section .formulario {
     flex-direction: column;
     justify-content: center;
   }
 }
-
 /* tablet ------------------------------------------------------------------------------------------------------*/
 @media only screen and (min-width: 481px) and (max-width: 978px) {
   header {
+    background-color: #C4DFE6;
     flex-direction: column;
   }
-  nav {
+  header nav {
     width: 100%;
   }
-  h2 {
+  header h2 {
     font-size: large;
   }
 }
+
+/*# sourceMappingURL=estilo.css.map */

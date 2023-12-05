@@ -1,0 +1,38 @@
+/* Color: #66A5AD, #C4DFE6, #07575B */
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;1,9..40,400&family=Mulish&display=swap");
+/*Variables*/
+@import "partials/variables";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+html{
+  font-family: "Mulish", sans-serif;
+  font-size: 62,5%;
+  overflow-x: hidden;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2rem;
+}
+p{
+    font-size: 1.5em;
+}
+
+@import "partials/header";
+@import "partials/footer";
+@import "partials/index";
+@import "partials/quienessomos";
+@import "partials/atencion";
+@import "partials/areasdetrabajo";
+@import "partials/contacto";
+@import "partials/mediaq";
+

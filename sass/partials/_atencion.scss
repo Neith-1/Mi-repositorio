@@ -1,0 +1,44 @@
+/*atención*/
+.areasdeatencion{
+    h1{
+        text-align: center;
+        text-decoration: solid;
+        font-weight: bold;
+        color: #66a5ad;
+        margin: 20px 0px;
+    }
+    p{
+        text-align: justify;
+        text-decoration: solid;
+        margin: 60px 40px;
+    }
+    .imagenesatencion{
+        @include flex(row, space-evenly, center);
+        margin-bottom: 10px;
+        .imageninfanto{
+            height: 300px;
+            transition: 2s;
+        }
+        .imageninfanto:hover{
+            transform: scale(1.05,1.05);
+        }
+        .imagenadultos{
+            height: 300px;
+            transition: 2s;
+        }
+        .imagenadultos:hover{
+            transform: scale(1.05,1.05);
+        }
+    }
+    .imagenesatenciondos{
+        @include flex(row, center, center);
+        margin-bottom: 10px;
+        .imagenfamilias{
+            height: 300px;
+            transition: 2s;
+        }
+        .imagenfamilias:hover{
+            transform: scale(1.05,1.05);
+        }
+    }
+}

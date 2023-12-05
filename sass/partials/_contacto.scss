@@ -1,0 +1,25 @@
+/*contacto*/
+.contactanos{
+    h1{
+        text-align: center;
+        text-decoration: solid;
+        font-weight: bold;
+        color: #66a5ad;
+        margin: 20px 0px;
+    }
+    h2{
+        text-decoration: solid;
+        text-align: center;
+        margin: 20px 0px;
+    }
+    section{
+        .formulario {
+            @include flex(row, center, center);
+            margin-bottom: 10px;
+        }
+    } 
+    .map{
+        @include flex(row, center, center);
+        margin-bottom: 10px;
+    }
+}

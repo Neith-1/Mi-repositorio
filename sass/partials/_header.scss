@@ -1,0 +1,34 @@
+/*Header*/
+header {
+  @include flex(row, space-between, center);
+  z-index: 1;
+  background: rgb(196, 223, 230);
+  background: linear-gradient(
+    96deg,
+    rgba(196, 223, 230, 1) 0%,
+    rgba(196, 223, 230, 1) 72%,
+    rgba(102, 165, 173, 1) 100%
+  );
+  position: sticky;
+  top: 0px;
+  .logo {
+    height: 150px;
+    width: 150px;
+  }
+  nav {
+    width: 50%;
+    ul {
+      list-style-type: none;
+      margin-right: 10px;
+      height: 100%;
+      @include flex(row, space-between, center);
+      li {
+        a {
+          color: #07575b;
+          text-decoration: none;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

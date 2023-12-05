@@ -1,0 +1,41 @@
+/*quienes somos*/
+.quienessomos{ 
+    h1{
+        text-align: center;
+        text-decoration: solid;
+        font-weight: bold;
+        color: #66a5ad;
+        margin: 20px 0px;
+    }
+    h2{
+        text-align: center;
+        text-decoration: solid;
+        font-weight: bold;
+        color: #66a5ad;
+    }
+    p{
+        text-align: justify;
+        text-decoration: solid;
+        margin: 50px 30px;
+    }
+    .imagenprofesionales{
+        @include flex(row, space-around, center);
+        margin: 50px 30px;
+        .terapeuta1{
+            height: 300px;
+        }
+        .terapeuta2{
+            height: 300px;
+        }
+    }
+    .profesionalesdos{
+        @include flex(row, space-evenly, center);
+        margin: 50px 30px;
+        .terapeuta3{
+            height: 300px;
+        }
+        .terapeuta4{
+            height: 300px;
+        }
+    }
+} 
