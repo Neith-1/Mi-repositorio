@@ -1,76 +1,76 @@
 /*Main index*/
-.banner{
-    text-align: center;
-    background-image: url(../imagenes/banner.jpg);
-    max-width: 100%;
-    height: auto;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-shadow: 1px 1px 25px rgb(0, 0, 0);
-    color: whitesmoke;
-    padding: 180px;
+.banner {
+  text-align: center;
+  background-image: url(../imagenes/banner.jpg);
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-shadow: 1px 1px 25px rgb(0, 0, 0);
+  color: whitesmoke;
+  padding: 180px;
 }
-.presentacion{
-    h2{  
-        text-align: justify;
-        text-decoration: solid;
-        color: #66a5ad;
-        margin: 5%;
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-}
-.servicios{
-    background-color: #C4DFE6;
-    .row row-cols-1 row-cols-md-3 g-4{
-        max-width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .card-img-top{
-        height: 300px;
-    }
-    .card-title{
-        color: #07575B;
-        font-family: "Mulish", sans-serif;
-        font-weight: bold;
-    }
-    .card-text{
-        color: #66a5ad;
-        font-family: "Mulish", sans-serif;
-    }
-}
-.mision{
+.presentacion {
+  h3 {
+    text-align: justify;
+    text-decoration: solid;
+    color: #66a5ad;
+    margin: 5%;
+    padding-top: 5%;
     padding-bottom: 5%;
-    h2{
-        text-align: justify;
-        text-decoration: solid;
-        color: #66a5ad;
-        margin: 5%;
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-    .imagenexpresion{
-        @include flex(row, space-around, center);
-        height: 100%;
-    }
-    .imagenmision{
-        max-width: 60%;
-        height: auto;
-        margin: 30px 90px;
-        transition: 2s;
-    }
-    .imagenmision:hover{
-        transform: scale(1.05,1.05);
-    }
-    .imagenmisiondos{
-        max-width: 60%;
-        height: auto;
-        margin: 30px 90px;
-        transition: 2s;
-    }
-    .imagenmisiondos:hover{
-        transform: scale(1.05,1.05);
-    }
+  }
+}
+.servicios {
+  background-color: #c4dfe6;
+  .pixelimagen {
+    height: 300px;
+  }
+  .titulotarjeta {
+    color: #07575b;
+    font-family: "Mulish", sans-serif;
+    font-weight: bold;
+  }
+  .texto {
+    color: #66a5ad;
+    font-family: "Mulish", sans-serif;
+  }
+}
+.mision {
+  padding-bottom: 5%;
+  h3 {
+    text-align: justify;
+    text-decoration: solid;
+    color: #66a5ad;
+    margin: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .imagenexpresion {
+    @include flex(row, space-around, center);
+  }
+  .imagenmision {
+    max-width: 60%;
+    height: 350px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #c4dfe6;
+    margin: 30px 90px;
+    transition: 2s;
+  }
+  .imagenmision:hover {
+    transform: scale(1.05, 1.05);
+  }
+  .imagenmisiondos {
+    max-width: 60%;
+    height: 350px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #c4dfe6;
+    margin: 30px 90px;
+    transition: 2s;
+  }
+  .imagenmisiondos:hover {
+    transform: scale(1.05, 1.05);
+  }
 }

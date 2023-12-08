@@ -16,11 +16,11 @@ html {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h3 {
@@ -28,43 +28,55 @@ h3 {
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
-/*Header*/
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1;
-  background: rgb(196, 223, 230);
-  background: linear-gradient(96deg, rgb(196, 223, 230) 0%, rgb(196, 223, 230) 72%, rgb(102, 165, 173) 100%);
-  position: sticky;
-  top: 0px;
+header .colornav {
+  background-color: #C4DFE6;
 }
-header .logo {
+header .colornav .logo {
   height: 150px;
   width: 150px;
 }
-header nav {
-  width: 50%;
-}
-header nav ul {
-  list-style-type: none;
-  margin-right: 10px;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-header nav ul li a {
-  color: #07575b;
-  text-decoration: none;
+header .colornav ul a {
+  color: #07575B;
   font-weight: bold;
 }
 
+/*Header
+header {
+  @include flex(row, space-between, center);
+  z-index: 1;
+  background: rgb(196, 223, 230);
+  background: linear-gradient(
+    96deg,
+    rgba(196, 223, 230, 1) 0%,
+    rgba(196, 223, 230, 1) 72%,
+    rgba(102, 165, 173, 1) 100%
+  );
+  position: sticky;
+  top: 0px;
+  .logo {
+    height: 150px;
+    width: 150px;
+  }
+  nav {
+    width: 50%;
+    ul {
+      list-style-type: none;
+      margin-right: 10px;
+      height: 100%;
+      @include flex(row, space-between, center);
+      li {
+        a {
+          color: #07575b;
+          text-decoration: none;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}*/
 /*Footer*/
 footer {
   padding-top: 5%;
@@ -78,7 +90,6 @@ footer {
 }
 footer p {
   color: #07575b;
-  font-weight: bold;
 }
 footer .redessociales {
   display: flex;
@@ -95,9 +106,6 @@ footer .redessociales .logoinstagram {
 footer .redessociales .logoyoutube {
   padding-top: 50%;
 }
-footer .contacto img {
-  width: 25px;
-}
 
 /*Main index*/
 .banner {
@@ -113,7 +121,7 @@ footer .contacto img {
   padding: 180px;
 }
 
-.presentacion h2 {
+.presentacion h3 {
   text-align: justify;
   text-decoration: solid;
   color: #66a5ad;
@@ -123,22 +131,17 @@ footer .contacto img {
 }
 
 .servicios {
-  background-color: #C4DFE6;
+  background-color: #c4dfe6;
 }
-.servicios .row row-cols-1 row-cols-md-3 g-4 {
-  max-width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-}
-.servicios .card-img-top {
+.servicios .pixelimagen {
   height: 300px;
 }
-.servicios .card-title {
-  color: #07575B;
+.servicios .titulotarjeta {
+  color: #07575b;
   font-family: "Mulish", sans-serif;
   font-weight: bold;
 }
-.servicios .card-text {
+.servicios .texto {
   color: #66a5ad;
   font-family: "Mulish", sans-serif;
 }
@@ -146,7 +149,7 @@ footer .contacto img {
 .mision {
   padding-bottom: 5%;
 }
-.mision h2 {
+.mision h3 {
   text-align: justify;
   text-decoration: solid;
   color: #66a5ad;
@@ -159,11 +162,13 @@ footer .contacto img {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 100%;
 }
 .mision .imagenmision {
   max-width: 60%;
-  height: auto;
+  height: 350px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #c4dfe6;
   margin: 30px 90px;
   transition: 2s;
 }
@@ -172,7 +177,10 @@ footer .contacto img {
 }
 .mision .imagenmisiondos {
   max-width: 60%;
-  height: auto;
+  height: 350px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #c4dfe6;
   margin: 30px 90px;
   transition: 2s;
 }
@@ -186,7 +194,7 @@ footer .contacto img {
   text-decoration: solid;
   font-weight: bold;
   color: #66a5ad;
-  margin: 20px 0px;
+  margin: 50px 0px;
 }
 .quienessomos h2 {
   text-align: center;
@@ -199,31 +207,27 @@ footer .contacto img {
   text-decoration: solid;
   margin: 50px 30px;
 }
-.quienessomos .imagenprofesionales {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin: 50px 30px;
+.quienessomos .profesionales {
+  margin: 50px 10px;
 }
-.quienessomos .imagenprofesionales .terapeuta1 {
-  height: 300px;
+.quienessomos .profesionales .profesionaluno {
+  height: 600px;
 }
-.quienessomos .imagenprofesionales .terapeuta2 {
-  height: 300px;
+.quienessomos .profesionales .profesionaldos {
+  height: 600px;
 }
-.quienessomos .profesionalesdos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 50px 30px;
+.quienessomos .profesionales .profesionaltres {
+  height: 600px;
 }
-.quienessomos .profesionalesdos .terapeuta3 {
-  height: 300px;
+.quienessomos .profesionales .nombreprofesional {
+  color: #07575b;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+  text-align: center;
 }
-.quienessomos .profesionalesdos .terapeuta4 {
-  height: 300px;
+.quienessomos .profesionales .descripcion {
+  color: #66a5ad;
+  font-family: "Mulish", sans-serif;
 }
 
 /*atención*/
@@ -232,7 +236,7 @@ footer .contacto img {
   text-decoration: solid;
   font-weight: bold;
   color: #66a5ad;
-  margin: 20px 0px;
+  margin: 50px 0px;
 }
 .areasdeatencion p {
   text-align: justify;
@@ -281,17 +285,16 @@ footer .contacto img {
   text-decoration: solid;
   font-weight: bold;
   color: #66a5ad;
-  margin: 20px 0px;
+  margin: 50px 0px;
 }
-.areasdetrabajo h2 {
-  text-align: justify;
-  text-decoration: solid;
-  margin: 60px 20px;
+.areasdetrabajo .tituloarea {
+  color: #07575b;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
 }
-.areasdetrabajo p {
+.areasdetrabajo .descripcionarea {
+  font-family: "Mulish", sans-serif;
   text-align: justify;
-  text-decoration: solid;
-  margin: 60px 40px;
 }
 
 /*contacto*/
@@ -300,11 +303,12 @@ footer .contacto img {
   text-decoration: solid;
   font-weight: bold;
   color: #66a5ad;
-  margin: 20px 0px;
+  margin: 50px 0px;
 }
 .contactanos h2 {
   text-decoration: solid;
   text-align: center;
+  color: #c4dfe6;
   margin: 20px 0px;
 }
 .contactanos section .formulario {
@@ -327,12 +331,19 @@ footer .contacto img {
   header .logo {
     height: 100px;
     width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   header nav {
     width: 100%;
   }
   header nav ul {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-left: 8px;
     font-size: 0.9em;
   }
@@ -349,10 +360,18 @@ footer .contacto img {
   .banner h2 {
     display: none;
   }
-  .presentacion h2 {
+  .presentacion h3 {
     font-size: 1.5rem;
   }
-  .mision h2 {
+  .servicios .titulotarjeta {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .servicios .texto {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  .mision h3 {
     font-size: 1.5rem;
   }
   .mision .imagenexpresion {
@@ -375,11 +394,18 @@ footer .contacto img {
   footer img {
     width: 30px;
   }
+  footer .contacto {
+    padding-top: 6%;
+    text-align: center;
+  }
+  footer p {
+    font-size: 1rem;
+  }
   .quienessomos h1 {
-    font-size: large;
+    font-size: 2rem;
   }
   .quienessomos h2 {
-    font-size: large;
+    font-size: 1.8rem;
   }
   .quienessomos .imagenprofesionales {
     flex-direction: column;
@@ -388,17 +414,18 @@ footer .contacto img {
     flex-direction: column;
   }
   .areasdeatencion h1 {
-    font-size: large;
+    font-size: 2rem;
   }
   .areasdeatencion h2 {
-    font-size: medium;
+    font-size: 1.8rem;
     text-align: center;
     text-decoration: solid;
     font-weight: bold;
     margin: 0px 0px;
   }
   .areasdeatencion p {
-    text-align: center;
+    font-size: 1.2rem;
+    text-align: justify;
     margin: 0px 0px;
   }
   .areasdeatencion .imagenesatencion {
@@ -413,6 +440,10 @@ footer .contacto img {
     height: 180px;
     margin: 20px 60px;
   }
+  .areasdeatencion .imagenesatencion p {
+    text-align: center;
+    margin: 0px 0px;
+  }
   .areasdeatencion .imagenesatenciondos {
     flex-direction: column;
     justify-content: center;
@@ -425,34 +456,184 @@ footer .contacto img {
     height: 180px;
     margin: 20px 60px;
   }
-  .areasdetrabajo h1 {
-    font-size: large;
+  .areasdeatencion h1 {
+    font-size: 2rem;
   }
-  .areasdetrabajo h2 {
-    font-size: large;
+  .areasdeatencion h2 {
+    font-size: 1.8rem;
   }
   .contactanos h1 {
-    font-size: large;
+    font-size: 2rem;
   }
   .contactanos h2 {
-    font-size: large;
+    font-size: 1.8rem;
   }
   .contactanos section .formulario {
     flex-direction: column;
     justify-content: center;
   }
+  .areasdetrabajo h1 {
+    font-size: 2rem;
+  }
+  .areasdetrabajo .tituloarea {
+    font-size: 1.8rem;
+  }
 }
 /* tablet ------------------------------------------------------------------------------------------------------*/
 @media only screen and (min-width: 481px) and (max-width: 978px) {
-  header {
-    background-color: #C4DFE6;
+  header .logo {
+    height: 100px;
+    width: 100px;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   header nav {
     width: 100%;
   }
-  header h2 {
-    font-size: large;
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    font-size: 0.9em;
+  }
+  .banner {
+    text-shadow: none;
+    height: 100%;
+    width: auto;
+    padding: 100px;
+  }
+  .banner h1 {
+    font-size: 3rem;
+    margin-bottom: 10%;
+    text-align: center;
+  }
+  .banner h2 {
+    display: none;
+  }
+  .presentacion h3 {
+    font-size: 1.5rem;
+  }
+  .servicios .titulotarjeta {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .servicios .texto {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  .mision h3 {
+    font-size: 1.5rem;
+  }
+  .mision .imagenexpresion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mision .imagenmision {
+    height: 200px;
+    margin: 20px 60px;
+  }
+  .mision .imagenmisiondos {
+    height: 200px;
+    margin: 20px 60px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer img {
+    width: 30px;
+  }
+  footer .contacto {
+    padding-top: 6%;
+    text-align: center;
+  }
+  footer p {
+    font-size: 1rem;
+  }
+  .quienessomos h1 {
+    font-size: 2rem;
+  }
+  .quienessomos h2 {
+    font-size: 1.8rem;
+  }
+  .quienessomos .profesionales .profesionaluno {
+    height: auto;
+  }
+  .quienessomos .profesionales .profesionaldos {
+    height: auto;
+  }
+  .quienessomos .profesionales .profesionaltres {
+    height: auto;
+  }
+  .areasdeatencion h1 {
+    font-size: 2rem;
+  }
+  .areasdeatencion h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    text-decoration: solid;
+    font-weight: bold;
+    margin: 0px 0px;
+  }
+  .areasdeatencion p {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 0px 0px;
+  }
+  .areasdeatencion .imagenesatencion {
+    flex-direction: column;
+    margin: 0px 0px;
+  }
+  .areasdeatencion .imagenesatencion .imageninfanto {
+    height: 180px;
+    margin: 20px 60px;
+  }
+  .areasdeatencion .imagenesatencion .imagenadultos {
+    height: 180px;
+    margin: 20px 60px;
+  }
+  .areasdeatencion .imagenesatencion p {
+    text-align: center;
+    margin: 0px 0px;
+  }
+  .areasdeatencion .imagenesatenciondos {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .areasdeatencion .imagenesatenciondos p {
+    text-align: center;
+    margin: 0px 0px;
+  }
+  .areasdeatencion .imagenesatenciondos .imagenfamilias {
+    height: 180px;
+    margin: 20px 60px;
+  }
+  .areasdeatencion h1 {
+    font-size: 2rem;
+  }
+  .areasdeatencion h2 {
+    font-size: 1.8rem;
+  }
+  .contactanos h1 {
+    font-size: 2rem;
+  }
+  .contactanos h2 {
+    font-size: 1.8rem;
+  }
+  .contactanos section .formulario {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .areasdetrabajo h1 {
+    font-size: 2rem;
+  }
+  .areasdetrabajo .tituloarea {
+    font-size: 1.8rem;
   }
 }
 

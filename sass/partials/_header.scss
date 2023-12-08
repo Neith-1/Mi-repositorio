@@ -1,4 +1,20 @@
-/*Header*/
+header{
+  .colornav{
+    background-color: #C4DFE6;
+    .logo {
+      height: 150px;
+      width: 150px;
+    }
+    ul{
+      a{
+        color: #07575B;
+        font-weight: bold;
+      }
+    }
+   
+  }
+}
+/*Header
 header {
   @include flex(row, space-between, center);
   z-index: 1;
@@ -31,4 +47,4 @@ header {
       }
     }
   }
-}
+}*/

@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Atención</title>
+    <meta name="description" content="Por la infancia es una Fundación privada sin fines de lucro, fundada en 2023, con el objetivo de proteger y defender los derechos de niños, niñas y adolescentes."/>
+    <meta name="keywords" content="atencion psicologica, salud mental, psiquiatra, psicologos, psicoterapia infantil, psicoterapia adolescentes, terapia familiar"/>
+    <title>Atención Fundación por la infancia</title>
     <!--CSS BS-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -11,25 +13,38 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <!--css propio-->
+    <!--CSS SASS-->
     <link rel="stylesheet" href="../css/estilo.css"/>
-
   </head>
   <body>
     <header>
-      <!--Logo-->
-      <img src="../imagenes/logo.jpg" class="logo" />
-
       <!--Barra de navegación-->
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./quienessomos.html">Quienes somos</a></li>
-          <li><a href="#">Atención</a></li>
-          <li><a href="./areasdetrabajo.html">Areas de trabajo</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+      <nav class="navbar navbar-expand-lg colornav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img class="logo" src="../imagenes/logo.jpg" alt="logo de la fundacion con su nombre"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./quienessomos.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./atencion.html">Atención</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./areasdetrabajo.html">Areas de trabajo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
     </header>
     <!--Contenido principal-->
     <main class="areasdeatencion">
@@ -41,23 +56,22 @@
         evaluación de Habilidades Parentales, evaluación clínica y
         Psicodiagnóstico.
       </p>
-
       <!--Imagenes que hacen referencia a las distintas áreas de trabajo-->
       <div class="imagenesatencion">
         <div>
-          <img src="../imagenes/terapiainfanto1.png" class="imageninfanto" />
+          <img src="../imagenes/terapiainfanto1.png" alt="una niña siendo atendido por una terapeuta" class="imageninfanto" />
           <h2>UNIDAD INFANTO JUVENIL</h2>
           <p>Atención Individual: $35.000</p>
         </div>
         <div>
-          <img src="../imagenes/atencionadulto.png" class="imagenadultos" />
+          <img src="../imagenes/atencionadulto.png" alt="una mujer siendo atendida por una terapeuta" class="imagenadultos" />
           <h2>UNIDAD ADULTOS</h2>
           <p>Atención Individual: $35.000</p>
         </div>
       </div>
       <div class="imagenesatenciondos">
         <div>
-          <img src="../imagenes/terapiafamiliar.png" class="imagenfamilias" />
+          <img src="../imagenes/terapiafamiliar.png" alt="una mujer, un hombre y una adolescente conversar con un terapeuta" class="imagenfamilias" />
           <h2>UNIDAD DE FAMILIAS</h2>
           <p>Sesiones de tratamiento: $45.000</p>
         </div>
@@ -84,22 +98,19 @@
       <div class="redessociales">
         <p>Buscanos en redes</p>
         <a href="https://www.facebook.com">
-          <img src="../imagenes/facebook.png" class="logofacebook" />
+          <img src="../imagenes/facebook.png" class="logofacebook" alt="logo de facebook"/>
         </a>
         <a href="https://www.instagram.com">
-          <img src="../imagenes/instagram.png" class="logoinstagram" />
+          <img src="../imagenes/instagram.png" class="logoinstagram" alt="logo de instagram"/>
         </a>
         <a href="https://www.youtube.com">
-          <img src="../imagenes/youtube.png" class="logoyoutube" />
+          <img src="../imagenes/youtube.png" class="logoyoutube" alt="logo de youtube"/>
         </a>
       </div>
       <div class="contacto">
-        <p>O contactanos:</p>
-        <img src="../imagenes/telefono.png" class="logotelefono" />
+        <p>Contactanos</p>
         <p>+56959272789</p>
-        <img src="../imagenes/ubicacion.png" class="logoubicacion" />
         <p>Av. Providencia 201, Santiago de Chile</p>
-        <img src="../imagenes/gmail.png" class="logogmail" />
         <p>fundacionparalainfancia@gmail.com</p>
       </div>
     </footer>

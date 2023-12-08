@@ -1,25 +1,26 @@
 /*contacto*/
-.contactanos{
-    h1{
-        text-align: center;
-        text-decoration: solid;
-        font-weight: bold;
-        color: #66a5ad;
-        margin: 20px 0px;
+.contactanos {
+  h1 {
+    text-align: center;
+    text-decoration: solid;
+    font-weight: bold;
+    color: #66a5ad;
+    margin: 50px 0px;
+  }
+  h2 {
+    text-decoration: solid;
+    text-align: center;
+    color: #c4dfe6;
+    margin: 20px 0px;
+  }
+  section {
+    .formulario {
+      @include flex(row, center, center);
+      margin-bottom: 10px;
     }
-    h2{
-        text-decoration: solid;
-        text-align: center;
-        margin: 20px 0px;
-    }
-    section{
-        .formulario {
-            @include flex(row, center, center);
-            margin-bottom: 10px;
-        }
-    } 
-    .map{
-        @include flex(row, center, center);
-        margin-bottom: 10px;
-    }
+  }
+  .map {
+    @include flex(row, center, center);
+    margin-bottom: 10px;
+  }
 }

@@ -1,146 +1,334 @@
 /*mobile*/
 @media only screen and (max-width: 500px) {
-    header{
-        .logo{
-            height: 100px;
-            width: 100px;
-        }
-        nav{
-            width: 100%;
-            ul{
-                flex-direction: column;
-                margin-left: 8px;
-                font-size: 0.9em;             
-            }      
-        }
+  header {
+    .logo {
+      height: 100px;
+      width: 100px;
+      @include flex(column, center, center);
     }
-    .banner{
-        text-shadow: none;
-        height: 200px;
-        width: 480px;
-        padding: 100px;
-        h1{
-            font-size: 2rem;
-            margin-bottom: 60%;
-        }
-        h2{
-             display: none;
-        }
+    nav {
+      width: 100%;
+      ul {
+        @include flex(column, center, center);
+        margin-left: 8px;
+        font-size: 0.9em;
+      }
     }
-    .presentacion{
-        h2{  
-            font-size: 1.5rem;
-        }
-    } 
-    .mision{
-        h2{
-            font-size: 1.5rem;
-        }
-        .imagenexpresion{
-            @include flex(column, center, center);
-        }
-        .imagenmision{
-            height: 200px;
-            margin: 20px 60px;
-        }
-        .imagenmisiondos{
-            height: 200px;
-            margin: 20px 60px;
-        }
+  }
+  .banner {
+    text-shadow: none;
+    height: 200px;
+    width: 480px;
+    padding: 100px;
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 60%;
     }
-    footer{
+    h2 {
+      display: none;
+    }
+  }
+  .presentacion {
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+  .servicios {
+    .titulotarjeta {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .texto {
+      font-size: 1.2rem;
+      text-align: justify;
+    }
+  }
+  .mision {
+    h3 {
+      font-size: 1.5rem;
+    }
+    .imagenexpresion {
+      @include flex(column, center, center);
+    }
+    .imagenmision {
+      height: 200px;
+      margin: 20px 60px;
+    }
+    .imagenmisiondos {
+      height: 200px;
+      margin: 20px 60px;
+    }
+  }
+  footer {
+    flex-direction: column;
+    img {
+      width: 30px;
+    }
+    .contacto {
+      padding-top: 6%;
+      text-align: center;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  .quienessomos {
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+    }
+    .imagenprofesionales {
+      flex-direction: column;
+    }
+    .profesionalesdos {
+      flex-direction: column;
+    }
+  }
+  .areasdeatencion {
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      text-align: center;
+      text-decoration: solid;
+      font-weight: bold;
+      margin: 0px 0px;
+    }
+    p {
+      font-size: 1.2rem;
+      text-align: justify;
+      margin: 0px 0px;
+    }
+    .imagenesatencion {
+      flex-direction: column;
+      margin: 0px 0px;
+      .imageninfanto {
+        height: 180px;
+        margin: 20px 60px;
+      }
+      .imagenadultos {
+        height: 180px;
+        margin: 20px 60px;
+      }
+      p {
+        text-align: center;
+        margin: 0px 0px;
+      }
+    }
+    .imagenesatenciondos {
+      flex-direction: column;
+      justify-content: center;
+      p {
+        text-align: center;
+        margin: 0px 0px;
+      }
+      .imagenfamilias {
+        height: 180px;
+        margin: 20px 60px;
+      }
+    }
+  }
+  .areasdeatencion {
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
+  .contactanos {
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+    }
+    section {
+      .formulario {
         flex-direction: column;
-        img{
-            width: 30px;
-        }
+        justify-content: center;
+      }
     }
-    .quienessomos{
-        h1{
-            font-size: large;
-        }
-        h2{
-            font-size: large;
-        }
-        .imagenprofesionales{
-            flex-direction: column;
-        }
-        .profesionalesdos{
-            flex-direction: column;   
-        }
+  }
+  .areasdetrabajo {
+    h1 {
+     font-size: 2rem;
     }
-    .areasdeatencion{
-        h1{
-            font-size: large;
-        }
-        h2{
-            font-size: medium;
-            text-align: center;
-            text-decoration: solid;
-            font-weight: bold;
-            margin: 0px 0px;
-        }
-        p{
-            text-align: center;
-            margin: 0px 0px;
-        }
-        .imagenesatencion{
-            flex-direction: column;
-            margin: 0px 0px;
-            .imageninfanto{
-                height: 180px;
-                margin: 20px 60px;
-            }
-            .imagenadultos{
-                height: 180px;
-                margin: 20px 60px;
-            }
-        }
-        .imagenesatenciondos{
-            flex-direction: column;
-            justify-content: center;
-            p{
-                text-align: center;
-                margin: 0px 0px;
-            }
-            .imagenfamilias{
-                height: 180px;
-                margin: 20px 60px;
-            }
-        }
-    }
-    .areasdetrabajo{
-        h1{
-            font-size: large;
-        }
-        h2{
-            font-size: large;
-        }
-    }
-    .contactanos{
-        h1{
-            font-size: large;
-        }
-        h2{
-            font-size: large;
-        }
-        section{
-            .formulario {
-                flex-direction: column;
-                justify-content: center;
-            } 
-        }
-    } 
+    .tituloarea {
+      font-size: 1.8rem;
+}
+}
 }
 /* tablet ------------------------------------------------------------------------------------------------------*/
 @media only screen and (min-width: 481px) and (max-width: 978px) {
-    header{
-        background-color: #C4DFE6;
-        flex-direction: column;
-        nav{
-            width: 100%;
-        }
-        h2{
-            font-size: large;
-        }
+  header {
+    .logo {
+      height: 100px;
+      width: 100px;
+      @include flex(column, center, center);
     }
+    nav {
+      width: 100%;
+      ul {
+        @include flex(column, center, center);
+        margin-left: 8px;
+        font-size: 0.9em;
+      }
+    }
+  }
+  .banner {
+    text-shadow: none;
+    height: 100%;
+    width: auto;
+    padding: 100px;
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10%;
+      text-align: center;
+    }
+    h2 {
+      display: none;
+    }
+  }
+  .presentacion {
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+  .servicios {
+    .titulotarjeta {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .texto {
+      font-size: 1.2rem;
+      text-align: justify;
+    }
+  }
+  .mision {
+    h3 {
+      font-size: 1.5rem;
+    }
+    .imagenexpresion {
+      @include flex(column, center, center);
+    }
+    .imagenmision {
+      height: 200px;
+      margin: 20px 60px;
+    }
+    .imagenmisiondos {
+      height: 200px;
+      margin: 20px 60px;
+    }
+  }
+  footer {
+    flex-direction: column;
+    img {
+      width: 30px;
+    }
+    .contacto {
+      padding-top: 6%;
+      text-align: center;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  .quienessomos {
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+    }
+    .profesionales {
+      .profesionaluno {
+        height: auto;
+      }
+      .profesionaldos {
+        height: auto;
+      }
+      .profesionaltres {
+        height: auto;
+      }
+    }
+  }
+  .areasdeatencion {
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      text-align: center;
+      text-decoration: solid;
+      font-weight: bold;
+      margin: 0px 0px;
+    }
+    p {
+      font-size: 1.2rem;
+      text-align: justify;
+      margin: 0px 0px;
+    }
+    .imagenesatencion {
+      flex-direction: column;
+      margin: 0px 0px;
+      .imageninfanto {
+        height: 180px;
+        margin: 20px 60px;
+      }
+      .imagenadultos {
+        height: 180px;
+        margin: 20px 60px;
+      }
+      p {
+        text-align: center;
+        margin: 0px 0px;
+      }
+    }
+    .imagenesatenciondos {
+      flex-direction: column;
+      justify-content: center;
+      p {
+        text-align: center;
+        margin: 0px 0px;
+      }
+      .imagenfamilias {
+        height: 180px;
+        margin: 20px 60px;
+      }
+    }
+  }
+  .areasdeatencion {
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
+  .contactanos {
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+    }
+    section {
+      .formulario {
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+  .areasdetrabajo {
+    h1 {
+     font-size: 2rem;
+    }
+    .tituloarea {
+      font-size: 1.8rem;
+}
+}
 }
